@@ -44,11 +44,37 @@ void Extra02()
     }
     Console.WriteLine($"First number = {firstNumber}");
     Console.WriteLine($"Second number = {secondNumber}");
-    Console.Write("Resalt array:");
+    Console.Write("Result array:");
     PrintArray(arr);
 }
 
+void Extra03()
+{
+    int size = 1000000;
+    int[] array = new int[size];
+    for (int i = 1; i < size; i++) array[i] = i;
+    int count = 0;
+    
+    for (int i = 0; i < size; i++)
+    {
+        int[] tempArr = numToArray(array[i]);
+        int tempSum = tempArr.Sum();
+        int tempMult = multipleArr(tempArr);
+        if (tempMult == tempSum * 3) count++;
+    }
+    Console.WriteLine($"Count of searching numbers = {count}");    
+}
 
+int multipleArr(int[] arr)
+{
+    int size = arr.Length;
+    int mult = 1;
+    for (int i = 0; i < size; i++)
+    {
+        mult *= arr[i];
+    }
+    return mult;
+}
 int[] numToArray(int number)
 {
     int count = numberLength(number);
@@ -68,9 +94,13 @@ int randNumber(int start, int end)
 }
 int numberLength(int number)
 {
-    double log = Math.Log10(number);
-    double count = Math.Floor(log) + 1;
-    return Convert.ToInt32(count);
+    int count = 0;
+    while (number > 0)
+    {
+        number = number / 10;
+        count++; 
+    }
+    return count;
 }
 void fillArray(int[] collection, int start, int end)
 {
@@ -97,3 +127,4 @@ void PrintArray(int[] col)
 
 // Extra01();
 // Extra02();
+Extra03();
