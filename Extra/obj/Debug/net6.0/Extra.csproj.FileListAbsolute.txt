@@ -1,0 +1,15 @@
+/home/vildan/Desktop/GIT/Homework05/Extra/bin/Debug/net6.0/Extra
+/home/vildan/Desktop/GIT/Homework05/Extra/bin/Debug/net6.0/Extra.deps.json
+/home/vildan/Desktop/GIT/Homework05/Extra/bin/Debug/net6.0/Extra.runtimeconfig.json
+/home/vildan/Desktop/GIT/Homework05/Extra/bin/Debug/net6.0/Extra.dll
+/home/vildan/Desktop/GIT/Homework05/Extra/bin/Debug/net6.0/Extra.pdb
+/home/vildan/Desktop/GIT/Homework05/Extra/obj/Debug/net6.0/Extra.csproj.AssemblyReference.cache
+/home/vildan/Desktop/GIT/Homework05/Extra/obj/Debug/net6.0/Extra.GeneratedMSBuildEditorConfig.editorconfig
+/home/vildan/Desktop/GIT/Homework05/Extra/obj/Debug/net6.0/Extra.AssemblyInfoInputs.cache
+/home/vildan/Desktop/GIT/Homework05/Extra/obj/Debug/net6.0/Extra.AssemblyInfo.cs
+/home/vildan/Desktop/GIT/Homework05/Extra/obj/Debug/net6.0/Extra.csproj.CoreCompileInputs.cache
+/home/vildan/Desktop/GIT/Homework05/Extra/obj/Debug/net6.0/Extra.dll
+/home/vildan/Desktop/GIT/Homework05/Extra/obj/Debug/net6.0/refint/Extra.dll
+/home/vildan/Desktop/GIT/Homework05/Extra/obj/Debug/net6.0/Extra.pdb
+/home/vildan/Desktop/GIT/Homework05/Extra/obj/Debug/net6.0/Extra.genruntimeconfig.cache
+/home/vildan/Desktop/GIT/Homework05/Extra/obj/Debug/net6.0/ref/Extra.dll
