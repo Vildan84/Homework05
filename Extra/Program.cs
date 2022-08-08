@@ -65,6 +65,27 @@ void Extra03()
     Console.WriteLine($"Count of searching numbers = {count}");    
 }
 
+void Extra04()
+{
+    int size = 5;
+    int[][] arr = new int[size][];
+    fillArrArr(arr, 1, 20);
+    PrintArrArr(arr);
+    int maxSum = 0;
+    int maxIndex = 0;
+
+    for (int i = 0; i < size; i++)
+    {
+        if (arr[i].Sum() > maxSum)
+        {
+            maxSum = arr[i].Sum();
+            maxIndex = i;
+        }
+    }
+    Console.Write($"Array with max sum = {maxSum}:");
+    PrintArray(arr[maxIndex]);
+}
+
 int multipleArr(int[] arr)
 {
     int size = arr.Length;
@@ -124,7 +145,29 @@ void PrintArray(int[] col)
     Console.Write("\b\b]");
     Console.WriteLine();
 }
+void fillArrArr(int[][] collection, int start, int end)
+{
+    int size = collection.Length;
+    Random rand = new Random();
+    int sizeArr = rand.Next(1, 6);
+
+    for (int i = 0 ; i < size; i++)
+    {
+        collection[i] = new int[sizeArr];
+        fillArray(collection[i], 1, 21);
+    }
+}
+void PrintArrArr(int[][] array)
+{
+    int size = array.Length;
+    for (int i = 0; i < size; i++)
+    {
+        PrintArray(array[i]);
+    }
+    Console.WriteLine();
+}
 
 // Extra01();
 // Extra02();
-Extra03();
+// Extra03();
+Extra04();
